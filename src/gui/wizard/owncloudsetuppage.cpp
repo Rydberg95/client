@@ -141,7 +141,7 @@ void OwncloudSetupPage::slotUrlEditFinished()
     QString url = _ui.leUrl->fullText();
     if (QUrl(url).isRelative() && !url.isEmpty()) {
         // no scheme defined, set one
-        url.prepend("https://");
+        url.prepend("");
         _ui.leUrl->setFullText(url);
     }
 }
